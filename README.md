@@ -1,3 +1,3 @@
 # Projects
 
-All the ML, DL and other projects you have done
+Machine Learning and Deep Learing Projects
