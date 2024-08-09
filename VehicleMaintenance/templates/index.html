@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Maintenance Predictor</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Vehicle Maintenance Predictor</h1>
+        <form id="predictionForm">
+            <div class="form-group">
+                <label for="Last_Service_Date">Last Service Date:</label>
+                <input type="date" id="Last_Service_Date" name="Last_Service_Date" required>
+            </div>
+            <div class="form-group">
+                <label for="Warranty_Expiry_Date">Warranty Expiry Date:</label>
+                <input type="date" id="Warranty_Expiry_Date" name="Warranty_Expiry_Date" required>
+            </div>
+            <div class="form-group">
+                <label for="Vehicle_Model">Vehicle Model:</label>
+                <select id="Vehicle_Model" name="Vehicle_Model" required>
+                    <option value="Bus">Bus</option>
+                    <option value="Car">Car</option>
+                    <option value="Motorcycle">Motorcycle</option>
+                    <option value="SUV">SUV</option>
+                    <option value="Truck">Truck</option>
+                    <option value="Van">Van</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="Maintenance_History">Maintenance History:</label>
+                <select id="Maintenance_History" name="Maintenance_History" required>
+                    <option value="Average">Average</option>
+                    <option value="Good">Good</option>
+                    <option value="Poor">Poor</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="Transmission_Type">Transmission Type:</label>
+                <select id="Transmission_Type" name="Transmission_Type" required>
+                    <option value="Automatic">Automatic</option>
+                    <option value="Manual">Manual</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="Tire_Condition">Tire Condition:</label>
+                <select id="Tire_Condition" name="Tire_Condition" required>
+                    <option value="Good">Good</option>
+                    <option value="New">New</option>
+                    <option value="Worn Out">Worn Out</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="Brake_Condition">Brake Condition:</label>
+                <select id="Brake_Condition" name="Brake_Condition" required>
+                    <option value="Good">Good</option>
+                    <option value="New">New</option>
+                    <option value="Worn Out">Worn Out</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="Battery_Status">Battery Status:</label>
+                <select id="Battery_Status" name="Battery_Status" required>
+                    <option value="Good">Good</option>
+                    <option value="New">New</option>
+                    <option value="Weak">Weak</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="Fuel_Type">Fuel Type:</label>
+                <select id="Fuel_Type" name="Fuel_Type" required>
+                    <option value="Diesel">Diesel</option>
+                    <option value="Electric">Electric</option>
+                    <option value="Petrol">Petrol</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="Owner_Type">Owner Type:</label>
+                <select id="Owner_Type" name="Owner_Type" required>
+                    <option value="First">First</option>
+                    <option value="Second">Second</option>
+                    <option value="Third">Third</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="Mileage">Mileage:</label>
+                <input type="number" id="Mileage" name="Mileage" required>
+            </div>
+            <div class="form-group">
+                <label for="Reported_Issues">Reported Issues:</label>
+                <input type="number" id="Reported_Issues" name="Reported_Issues" required>
+            </div>
+            <div class="form-group">
+                <label for="Vehicle_Age">Vehicle Age:</label>
+                <input type="number" id="Vehicle_Age" name="Vehicle_Age" required>
+            </div>
+            <div class="form-group">
+                <label for="Engine_Size">Engine Size:</label>
+                <input type="number" id="Engine_Size" name="Engine_Size" required>
+            </div>
+            <div class="form-group">
+                <label for="Fuel_Efficiency">Fuel Efficiency:</label>
+                <input type="number" id="Fuel_Efficiency" name="Fuel_Efficiency" required>
+            </div>
+            <div class="form-group">
+                <label for="Odometer_Reading">Odometer Reading:</label>
+                <input type="number" id="Odometer_Reading" name="Odometer_Reading" required>
+            </div>
+            <div class="form-group">
+                <label for="Service_History">Service History:</label>
+                <input type="number" id="Service_History" name="Service_History" required>
+            </div>
+            <div class="form-group">
+                <label for="Accident_History">Accident History:</label>
+                <input type="number" id="Accident_History" name="Accident_History" required>
+            </div>
+            <button type="submit">Predict</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="static/script.js"></script>
+</body>
+</html>
