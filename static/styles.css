@@ -1,0 +1,101 @@
+/* Ensure the body and html take up the full viewport height */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Background image container */
+body::before {
+    content: "";
+    background: url('/static/car.jpg') no-repeat center center fixed;
+    background-size: cover;
+    position: fixed; /* Change from absolute to fixed */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    filter: blur(10px); /* Adjust the blur intensity as needed */
+}
+
+/* Container styling */
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+    border-radius: 8px;
+}
+
+/* Header styling */
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Form group styling */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Form label styling */
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* Input and select styling */
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+#Last_Service_Date{
+    width: 96.5%;
+}
+#Warranty_Expiry_Date{
+    width: 96.5%;
+}
+#Mileage,
+#Reported_Issues,
+#Vehicle_Age,
+#Engine_Size,
+#Odometer_Reading,
+#Service_History,
+#Accident_History,
+#Fuel_Efficiency {
+    width: 96.5%;
+}
+/* Button styling */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Result styling */
+#result {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #e9ecef;
+    border-radius: 4px;
+    text-align: center;
+}
