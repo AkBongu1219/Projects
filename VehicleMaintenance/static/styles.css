@@ -9,7 +9,7 @@ html, body {
 /* Background image container */
 body::before {
     content: "";
-    background: url('/static/car.jpg') no-repeat center center fixed;
+    background: url('C:/Users/Guest_User/Documents/MyProjects/VehicleMaintenance/static/car.jpg') no-repeat center center fixed;
     background-size: cover;
     position: fixed; /* Change from absolute to fixed */
     top: 0;
